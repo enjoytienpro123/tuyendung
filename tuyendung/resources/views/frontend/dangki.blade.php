@@ -23,18 +23,6 @@
                 <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
             </div>
 
-            <!-- <div class="mb-3 position-relative">
-                <label for="password" class="form-label">Mật khẩu <span class="text-danger">*</span></label>
-                <input type="password" class="form-control" id="password" placeholder="Tối thiểu 6 ký tự" required>
-                <i class="fas fa-eye eye-icon" id="togglePassword"></i>
-            </div>
-
-            <div class="mb-3 position-relative">
-                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu <span class="text-danger">*</span></label>
-                <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
-                <i class="fas fa-eye eye-icon" id="toggleConfirmPassword"></i>
-            </div> -->
-
 
             <!-- Ô mật khẩu -->
             <div class="mb-3 position-relative">
@@ -84,24 +72,7 @@
     </div>
   </div>
 
-  <!-- <script>
-    // Toggle password visibility
-    document.getElementById('togglePassword').addEventListener('click', function () {
-      const passwordInput = document.getElementById('password');
-      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-      passwordInput.setAttribute('type', type);
-      this.classList.toggle('fa-eye');
-      this.classList.toggle('fa-eye-slash');
-    });
-
-    document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
-      const passwordInput = document.getElementById('confirmPassword');
-      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-      passwordInput.setAttribute('type', type);
-      this.classList.toggle('fa-eye');
-      this.classList.toggle('fa-eye-slash');
-    });
-  </script> -->
+  
   <script>
     // Toggle cho ô mật khẩu
     document.getElementById('togglePassword').addEventListener('click', function () {
