@@ -1,0 +1,147 @@
+.login-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  overflow: hidden;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-header {
+  background: #007bff;
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.login-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.login-body {
+  padding: 2rem 1.5rem;
+}
+
+.login-form .form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.login-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+.login-form .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.login-form .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.login-form .social-login {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.login-form .social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid #ddd;
+  background: white;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.login-form .social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.login-form .social-btn.facebook { color: #3b5998; }
+.login-form .social-btn.google { color: #db4437; }
+.login-form .social-btn.github { color: #333; }
+
+.login-form .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.login-form .divider::before,
+.login-form .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.login-form .divider span {
+  padding: 0 10px;
+  background: white;
+}
+
+.login-form .forgot-link {
+  text-align: right;
+  margin-bottom: 1.2rem;
+}
+
+.login-form .forgot-link a,
+.login-form .register-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-form .forgot-link a:hover,
+.login-form .register-link a:hover {
+  text-decoration: underline;
+}
+
+.login-form .register-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.login-form .password-wrapper {
+  position: relative;
+}
+
+.login-form .eye-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.login-form .eye-icon:hover {
+  color: #555;
+}

@@ -1,0 +1,142 @@
+.register-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+}
+
+.register-header {
+  background: #007bff;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.register-header h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.register-body {
+  padding: 2rem;
+}
+
+/* Chỉ định style riêng cho form đăng ký */
+.register-form .form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.register-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+.register-form .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.75rem;
+  font-weight: 600;
+}
+
+.register-form .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.register-form .social-login {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.register-form .social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid #ddd;
+  transition: all 0.3s;
+}
+
+.register-form .social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.register-form .social-btn.facebook { color: #3b5998; }
+.register-form .social-btn.google { color: #db4437; }
+.register-form .social-btn.github { color: #333; }
+
+.register-form .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #666;
+}
+
+.register-form .divider::before,
+.register-form .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.register-form .divider::before {
+  margin-right: 0.5rem;
+}
+
+.register-form .divider::after {
+  margin-left: 0.5rem;
+}
+
+.register-form .login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #555;
+}
+
+.register-form .login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-form .login-link a:hover {
+  text-decoration: underline;
+}
+
+.register-form .terms {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.register-form .terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-form .terms a:hover {
+  text-decoration: underline;
+}
+
+.register-form .eye-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.register-form .eye-icon:hover {
+  color: #555;
+}

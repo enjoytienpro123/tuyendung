@@ -1,0 +1,425 @@
+    /* ==============================
+        JOB CARD STYLE - KHÔNG BỂ FORM
+    ============================== */
+    .job-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .job-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .job-card .card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    /*  hình ảnh logo tròn, vừa khung */
+    .job-card .card-body .d-flex img {
+        width: 200px;
+        height: 40px;
+        object-fit: cover; 
+        border-radius: 50%; 
+        border: 2px solid #ddd; 
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Logo công ty - luôn tròn, vừa khung */
+    .company-logo {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        flex-shrink: 0; /* Không bị co lại */
+    }
+
+    /* Tiêu đề công việc - giới hạn dòng, tránh dài quá */
+    .job-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.3;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+        -webkit-box-orient: vertical;
+        word-break: break-word;
+    }
+
+    /* Tên công ty - nhỏ gọn */
+    .company-name {
+        margin: 0.25rem 0;
+        font-size: 0.875rem;
+    }
+
+    /* Thông tin lương - giữ khoảng cách */
+    .salary-info small {
+        display: block;
+        line-height: 1.4;
+    }
+
+    /* Nút ứng tuyển - luôn ở dưới cùng */
+    .job-card .btn {
+        margin-top: auto;
+    }
+    /* phân trang */
+    .page-item.active .page-link {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    border-color: #0d6efd;
+    }
+
+    .page-link {
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    /* ==============================
+        HERO BANNER - ẢNH KHÔNG BỂ
+    ============================== */
+    .hero-banner {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* ==============================
+        COMPANY CARD - ĐỒNG ĐỀU
+    ============================== */
+    .company-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .company-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .company-card h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+
+    /* ===========================
+    job viec làm
+    ============================ */
+    .job-card-vl {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    margin-bottom: 1rem;
+    }
+
+    .job-card-vl .badge {
+        font-size: 0.85rem;
+    }
+
+    .job-card-vl .btn-sm {
+        font-size: 0.875rem;
+    }
+
+    .job-card-vl .fa-heart {
+        color: #f50707;
+        transition: color 0.3s;
+    }
+
+    .job-card-vl .fa-heart:hover {
+        color: #280eef;
+    }
+
+    .job-card-vl .position-absolute {
+        z-index: 10;
+    }
+
+    /* Căn chỉnh nút và nội dung */
+    .job-card-vl .d-flex.align-items-start {
+        min-height: 50px;
+    }
+    @media (max-width: 576px) {
+      .job-card-vl {
+          padding: 1rem;
+      }
+      .job-card-vl .d-flex {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+    }
+    /* ==================================
+    chi tiết việc làm
+    ================================== */
+    .job-detail-card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      background: white;
+      position: relative;
+      padding: 1.5rem;
+    }
+    .job-salary {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #007bff;
+    }
+    .job-benefits .badge {
+      background-color: #e9ecef;
+      color: #495057;
+      border: none;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .job-description h5,
+    .job-requires h5,
+    .job-benefits h5 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-outline-primary {
+      border-color: #007bff;
+      color: #007bff;
+    }
+    .similar-jobs h4 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .hot-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #dc3545;
+      color: white;
+      padding: 0.3rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .info-icon {
+      margin-right: 0.3rem;
+    }
+    .job-card-vl {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .job-card-vl .badge {
+      font-size: 0.85rem;
+    }
+    .job-card-vl .btn-sm {
+      font-size: 0.875rem;
+    }
+    .job-card-vl .fa-heart {
+      color: #ccc;
+      transition: color 0.3s;
+    }
+    .job-card-vl .fa-heart:hover {
+      color: #e74c3c;
+    }
+
+    /* =========================
+    chi tiết công ty
+    ========================= */
+    .company-header {
+        background: linear-gradient(to right, #007bff, #007bff);
+        color: white;
+        padding: 2rem 1rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+        }
+        .company-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://via.placeholder.com/1200x300?text=Tech+Background');
+        background-size: cover;
+        opacity: 0.3;
+        z-index: 1;
+        }
+        .company-header-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        }
+        .company-logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 12px;
+        object-fit: cover;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .company-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        }
+        .company-size {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+        color: #fff;
+        }
+        .btn-follow {
+        background-color: white;
+        color: #007bff;
+        border: none;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        transition: all 0.3s;
+        }
+        .btn-follow:hover {
+        background-color: #f0f0f0;
+        }
+        .section-title {
+        background-color: #007bff;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px 8px 0 0;
+        font-weight: 600;
+        }
+        .section-body {
+        padding: 1.5rem;
+        background-color: white;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .job-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .job-card h5 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+        }
+        .job-card p {
+        margin: 0;
+        color: #555;
+        font-size: 0.9rem;
+        }
+        .job-salary {
+        color: #007bff;
+        font-weight: 600;
+        float: right;
+        }
+        .job-location {
+        color: #6c757d;
+        font-size: 0.9rem;
+        }
+        .job-time {
+        color: #6c757d;
+        font-size: 0.9rem;
+        }
+        .btn-apply {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        margin-right: 0.5rem;
+        }
+        .btn-favorite {
+        background: none;
+        border: none;
+        color: #6c757d;
+        cursor: pointer;
+        font-size: 1.2rem;
+        }
+        .btn-favorite:hover {
+        color: #e74c3c;
+        }
+        .map-container {
+        height: 250px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 1rem;
+        }
+        .share-section {
+        padding: 1.5rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .top-companies {
+        margin-top: 3rem;
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 12px;
+        }
+        .top-company-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        background-color: white;
+        }
+        .top-company-logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        object-fit: cover;
+        }
+        .top-company-name {
+        font-weight: 600;
+        }
+        .top-company-industry {
+        color: #6c757d;
+        font-size: 0.9rem;
+        }
+        .view-more-btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        margin-top: 1rem;
+        font-weight: 600;
+        }
+        .view-more-btn i {
+        margin-left: 0.5rem;
+        }
